@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nina's Vault</title>
+
+<!-- fuentes de google, nada especial. la cursiva del título es "Parisienne" -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- menú fijo arriba, los 4 links que pediste -->
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#recursos">Recursos</a>
+  <a href="#favoritos">Favoritos</a>
+  <a href="#tips">Tips</a>
+</nav>
+
+<!-- ===== INICIO ===== -->
+<section id="inicio">
+  <div class="avatar">⋆</div> <!-- acá va la foto de perfil, esto es solo un placeholder -->
+
+  <p class="eyebrow">Presentando <span>♡</span> mi baúl</p>
+  <h1 class="title">Sabrina's vault</h1> <!-- el nombre/título de la página -->
+  <p class="subtitle">Un lugar para guardar lo bonito ♡</p>
+
+  <!-- la cajita de "inspirado en", tipo las imágenes de referencia -->
+  <div class="caption-box">
+    <b>ESTE RINCÓN ESTÁ INSPIRADO EN:</b><br>
+    Figurines de moda, café con canela, atardeceres de otoño<br>
+    ♡ y todas las cosas bonitas.
+  </div>
+</section>
+
+<!-- ===== RECURSOS ===== -->
+<section id="recursos">
+  <p class="eyebrow">Para explorar</p>
+  <h2 class="section-title">Recursos</h2>
+  <p class="section-sub">Los recursos que voy usando para cada edit</p>
+
+  <div id="recursosContainer"></div>
+</section>
+
+<!-- ===== FAVORITOS ===== -->
+<section id="favoritos">
+  <p class="eyebrow">Lo que amo</p>
+  <h2 class="section-title">Favoritos</h2>
+  <p class="section-sub">Las cositas a las que siempre vuelvo</p>
+
+  <div class="grid">
+    <div class="card fav-card">
+      <div class="tape"></div>
+      <div class="thumb" style="background:linear-gradient(135deg,#f5e9e3,#e6c9bd);">𖤣</div>
+      <h3>Café de domingo</h3>
+      <p>Con canela y un libro a medio terminar.</p>
+      <span class="tag">♡ Ritual favorito</span>
+    </div>
+    <div class="card fav-card">
+      <div class="tape"></div>
+      <div class="thumb" style="background:linear-gradient(135deg,#e3ecf0,#c4dae4);">☾</div>
+      <h3>Películas de tarde lluviosa</h3>
+      <p>Historias lentas, finales agridulces.</p>
+      <span class="tag">♡ Manta incluida</span>
+    </div>
+    <div class="card fav-card">
+      <div class="tape"></div>
+      <div class="thumb" style="background:linear-gradient(135deg,#f0e6ee,#dbbdd0);">❀</div>
+      <h3>Flores secas</h3>
+      <p>Guardadas entre las páginas de mis cuadernos.</p>
+      <span class="tag">♡ Pequeños tesoros</span>
+    </div>
+    <div class="card fav-card">
+      <div class="tape"></div>
+      <div class="thumb" style="background:linear-gradient(135deg,#eee7dc,#dfc9a2);">♪</div>
+      <h3>Canciones de siempre</h3>
+      <p>Las que me sé de memoria, aunque no quiera.</p>
+      <span class="tag">♡ Repeat infinito</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIPS ===== -->
+<section id="tips">
+  <p class="eyebrow">Pequeños consejos</p>
+  <h2 class="section-title">Tips</h2>
+  <p class="section-sub">Cosas simples que me hacen bien</p>
+
+  <div class="tips-wrap">
+    <div class="tip">
+      <span class="num">01</span>
+      <p>Escribir <span class="underline">a mano</span> todos los días, aunque sean tres líneas.</p>
+    </div>
+    <div class="tip">
+      <span class="num">02</span>
+      <p>Dejar el <span class="underline">celular</span> lejos, aunque sea una hora al día.</p>
+    </div>
+    <div class="tip">
+      <span class="num">03</span>
+      <p>Tomar agua antes del café, siempre se <span class="underline">lo agradece</span>.</p>
+    </div>
+    <div class="tip">
+      <span class="num">04</span>
+      <p>Guardar lo <span class="underline">bonito</span> que pasa en algún lugar, aunque sea chiquito.</p>
+    </div>
+    <div class="tip">
+      <span class="num">05</span>
+      <p>Caminar sin rumbo, aunque sean diez <span class="underline">minutos</span>.</p>
+    </div>
+    <div class="tip">
+      <span class="num">06</span>
+      <p>Ser <span class="underline">amable</span> conmigo primero. Todo lo demás llega después.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Hecho con calma y un poquito de <span class="heart">♡</span>
+</footer>
+
+<!-- ===== MODAL ===== -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <img class="modal-image" id="modalImage" alt="">
+    <div class="modal-content">
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <a class="modal-download" id="modalDownload" href="#" download></a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
