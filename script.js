@@ -1,11 +1,11 @@
-// ===== SISTEMA DE PUBLICACIONES DE RECURSOS =====
-// Agregar nuevas publicaciones aquí, marcar featured: true para la que quieras destacar
+// SISTEMA DE PUBLICACIONES DE RECURSOS
+// Agregar nuevas publicaciones aquí, marcar featured: true para lo que se quira destacar
 
 const publicacionesRecursos = [
   {
     id: 1,
     title: 'Fonts',
-    desc: 'Algunad fuentes bonitas.',
+    desc: 'Fentes bonitas.',
     image: 'images/01.jpg',
     downloadUrl: 'https://drive.google.com/drive/folders/1yDj8wsHwSNd8GAUr2_eLHk20usvLCOI9',
     featured: true,  // ← MARCAR AQUÍ CUÁL ESTÁ DESTACADA
@@ -44,7 +44,7 @@ function renderizarRecursos() {
           </div>
           <h3>${destacada.title}</h3>
           <p>${destacada.desc}</p>
-          <span class="tag">✨ Nuevo</span>
+          <span class="tag">⋆˚꩜｡ Nuevo</span>
 
           <div style="margin-top: 24px;">
             <a href="${destacada.downloadUrl}" target="_blank" style="
